@@ -1,23 +1,32 @@
 ﻿local trigger = script.parent
+local numInteract = 0
 
-function OnBeginOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
-	end
-end
-
-function OnEndOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": End Trigger Overlap with " .. other.name)
-	end
-end
 
 function OnInteracted(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Trigger Interacted " .. other.name)
+	
+	numInteract = numInteract + 1
+		
+	if numInteract == 1 then
+	
+		local soil = trigger:FindChildByName("Worked Soil")
+		soil.visibility = Visibility.FORCE_ON
+			
 	end
+	
+	if numInteract == 2 then
+	
+		local seed = trigger:FindChildByName("Seed")
+		seed.visibility = Visibility.FORCE_ON
+	
+	end
+	
+	if numInteract == 3 then
+	
+		local sapling = trigger:FindChildByName("Sapling")
+		sapling.visibility = Visibility.FORCE_ON
+	
+	end
+	
 end
 
-trigger.beginOverlapEvent:Connect(OnBeginOverlap)
-trigger.endOverlapEvent:Connect(OnEndOverlap)
 trigger.interactedEvent:Connect(OnInteracted)

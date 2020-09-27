@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11706118003824367020
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
   Id: 11012516082149160225
   Name: "Wedge - Curved"
   PlatformAssetType: 1
@@ -329,5 +338,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_cauldron_001"
+  }
+}
+Assets {
+  Id: 589585761720435498
+  Name: "Forest Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "forest-floor_002"
   }
 }

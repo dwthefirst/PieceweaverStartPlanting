@@ -84,7 +84,12 @@ Objects {
   ChildIds: 8883910499044696411
   ChildIds: 15566865719749200323
   ChildIds: 722545256259756269
-  ChildIds: 10145612790891117916
+  ChildIds: 16667104521271015689
+  ChildIds: 1691119035940302013
+  ChildIds: 5972798871092277452
+  ChildIds: 15199432848159611584
+  ChildIds: 3700660377411711681
+  ChildIds: 3041684318085835155
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -97,9 +102,17 @@ Objects {
   }
 }
 Objects {
-  Id: 10145612790891117916
-  Name: "Medival Well"
+  Id: 3041684318085835155
+  Name: "Plant"
   Transform {
+    Location {
+      X: -3168.4729
+      Y: 807.873047
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00007963
+    }
     Scale {
       X: 1
       Y: 1
@@ -107,48 +120,1258 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14836618780174424286
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Medival Well"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -3650.0874
-            Y: -2339.14893
-            Z: 803.47937
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.75065839
-            Y: 1.75065839
-            Z: 1.75065839
-          }
-        }
+  ChildIds: 10426094028147177370
+  ChildIds: 2275662718461442468
+  ChildIds: 15970412624047463083
+  ChildIds: 1411934191286636634
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1411934191286636634
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -29.1494141
+      Y: -29.2810059
+      Z: -43.9561768
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 3041684318085835155
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
       }
     }
-    TemplateAsset {
-      Id: 500233092975609436
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15970412624047463083
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 3041684318085835155
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2275662718461442468
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 3041684318085835155
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10426094028147177370
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3041684318085835155
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
+    }
+  }
+}
+Objects {
+  Id: 3700660377411711681
+  Name: "Plant"
+  Transform {
+    Location {
+      X: -2803.88354
+      Y: 890.731445
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00007439
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 6548192448253520901
+  ChildIds: 17337227990089695237
+  ChildIds: 5054115881984222524
+  ChildIds: 16910231748263384775
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16910231748263384775
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -35.5222168
+      Y: -28.6610107
+      Z: -43.9561768
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 3700660377411711681
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5054115881984222524
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 3700660377411711681
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17337227990089695237
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 3700660377411711681
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6548192448253520901
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3700660377411711681
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
+    }
+  }
+}
+Objects {
+  Id: 15199432848159611584
+  Name: "Plant"
+  Transform {
+    Location {
+      X: -2454.21216
+      Y: 948.50354
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00006914
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 6852586512266629080
+  ChildIds: 10989267648762393084
+  ChildIds: 10239872174902265237
+  ChildIds: 12194213440838182504
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12194213440838182504
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -30.9145508
+      Y: -34.6856689
+      Z: -43.9561768
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 15199432848159611584
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10239872174902265237
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 15199432848159611584
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10989267648762393084
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810448
+      Y: -34.6849
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 15199432848159611584
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6852586512266629080
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15199432848159611584
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
+    }
+  }
+}
+Objects {
+  Id: 5972798871092277452
+  Name: "Plant"
+  Transform {
+    Location {
+      X: -2427.12842
+      Y: 545.651123
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00008488
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 9586920415962376016
+  ChildIds: 7543078366113009190
+  ChildIds: 13306797959226385243
+  ChildIds: 5529148833901291027
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5529148833901291027
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -20.4333496
+      Y: -35.9413452
+      Z: -43.9422607
+    }
+    Rotation {
+      Yaw: -5.00009155
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 5972798871092277452
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13306797959226385243
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 5972798871092277452
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7543078366113009190
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 5972798871092277452
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9586920415962376016
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5972798871092277452
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
+    }
+  }
+}
+Objects {
+  Id: 1691119035940302013
+  Name: "Plant"
+  Transform {
+    Location {
+      X: -2755.79126
+      Y: 484.962555
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00007963
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 17679741913099726760
+  ChildIds: 16226800761446960170
+  ChildIds: 7675289885051142773
+  ChildIds: 2802127631832492239
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 2802127631832492239
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -26.1887207
+      Y: -28.7783203
+      Z: -43.9459229
+    }
+    Rotation {
+      Yaw: -5.00009155
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 1691119035940302013
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7675289885051142773
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 1691119035940302013
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16226800761446960170
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 1691119035940302013
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17679741913099726760
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1691119035940302013
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
+    }
+  }
+}
+Objects {
+  Id: 16667104521271015689
+  Name: "Plant"
+  Transform {
+    Location {
+      X: -3103.99023
+      Y: 426.969818
+      Z: 850
+    }
+    Rotation {
+      Yaw: 5.00007439
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 7515060761567871214
+  ChildIds: 6540214804760500992
+  ChildIds: 3876601836269042353
+  ChildIds: 13024499918571405156
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Interact"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 13024499918571405156
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -35.8757324
+      Y: -39.6613159
+      Z: -43.9561768
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 16667104521271015689
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3876601836269042353
+  Name: "Sapling"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 16667104521271015689
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14405817098628699646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6540214804760500992
+  Name: "Worked Soil"
+  Transform {
+    Location {
+      X: -32.9810562
+      Y: -34.6849174
+      Z: -50
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: 0.85564214
+      Y: 0.919816911
+      Z: 0.25
+    }
+  }
+  ParentId: 16667104521271015689
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13808447024064792672
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1829986524737497031
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7515060761567871214
+  Name: "PlantandDigSoil"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16667104521271015689
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13196496904818293485
     }
   }
 }
 Objects {
   Id: 722545256259756269
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -3061.14
-      Y: 138.726288
+      Y: 80.7723083
       Z: 850
     }
     Rotation {
-      Yaw: 5.00006342
+      Yaw: 5.00006914
     }
     Scale {
       X: 1
@@ -160,6 +1383,8 @@ Objects {
   ChildIds: 18256978728048951134
   ChildIds: 161985439841307997
   ChildIds: 12613262261836490563
+  ChildIds: 2917947013856515608
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -168,7 +1393,7 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -179,12 +1404,61 @@ Objects {
   }
 }
 Objects {
+  Id: 2917947013856515608
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -36.3969727
+      Y: -39.9946899
+      Z: -43.9561768
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 722545256259756269
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 12613262261836490563
   Name: "Sapling"
   Transform {
     Location {
-      X: -32.9810486
-      Y: -34.6849136
+      X: -32.9810562
+      Y: -34.6849174
       Z: -50
     }
     Rotation {
@@ -197,11 +1471,12 @@ Objects {
     }
   }
   ParentId: 722545256259756269
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -223,8 +1498,8 @@ Objects {
   Name: "Worked Soil"
   Transform {
     Location {
-      X: -32.9810486
-      Y: -34.6849136
+      X: -32.9810562
+      Y: -34.6849174
       Z: -50
     }
     Rotation {
@@ -245,11 +1520,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -282,6 +1558,7 @@ Objects {
     }
   }
   ParentId: 722545256259756269
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -296,15 +1573,15 @@ Objects {
 }
 Objects {
   Id: 15566865719749200323
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -2729.17676
-      Y: 170.541977
+      Y: 153.199936
       Z: 850
     }
     Rotation {
-      Yaw: 5.00005817
+      Yaw: 5.00006342
     }
     Scale {
       X: 1
@@ -316,6 +1593,8 @@ Objects {
   ChildIds: 17794912611977814806
   ChildIds: 14307127836452539321
   ChildIds: 12486804676672138922
+  ChildIds: 10218094610868893889
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -324,13 +1603,62 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 10218094610868893889
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -29.2578125
+      Y: -39.6506958
+      Z: -43.9523315
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 15566865719749200323
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -353,11 +1681,12 @@ Objects {
     }
   }
   ParentId: 15566865719749200323
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -401,11 +1730,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -438,6 +1768,7 @@ Objects {
     }
   }
   ParentId: 15566865719749200323
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -452,7 +1783,7 @@ Objects {
 }
 Objects {
   Id: 8883910499044696411
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -2384.87646
@@ -472,6 +1803,8 @@ Objects {
   ChildIds: 15368267322375209687
   ChildIds: 5251157032644100595
   ChildIds: 13602379528659234609
+  ChildIds: 3888762675325161986
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -480,13 +1813,62 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3888762675325161986
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -31.5612793
+      Y: -38.5991821
+      Z: -43.944397
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 8883910499044696411
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -509,11 +1891,12 @@ Objects {
     }
   }
   ParentId: 8883910499044696411
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -557,11 +1940,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -594,6 +1978,7 @@ Objects {
     }
   }
   ParentId: 8883910499044696411
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -608,7 +1993,7 @@ Objects {
 }
 Objects {
   Id: 9969926475246512595
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -2083.88403
@@ -628,6 +2013,8 @@ Objects {
   ChildIds: 10292094115253693231
   ChildIds: 6767055792337982032
   ChildIds: 4831787727183167308
+  ChildIds: 276626658765295858
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -636,13 +2023,62 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 276626658765295858
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -27.2126465
+      Y: -34.3991699
+      Z: -43.9562378
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 9969926475246512595
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -665,11 +2101,12 @@ Objects {
     }
   }
   ParentId: 9969926475246512595
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -713,11 +2150,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -750,6 +2188,7 @@ Objects {
     }
   }
   ParentId: 9969926475246512595
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -764,7 +2203,7 @@ Objects {
 }
 Objects {
   Id: 17059587946061203338
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -2041.13477
@@ -784,6 +2223,8 @@ Objects {
   ChildIds: 18054383743522881062
   ChildIds: 12475306344156311472
   ChildIds: 14013335088061363483
+  ChildIds: 5195253611400155584
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -792,13 +2233,62 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5195253611400155584
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -27.7924805
+      Y: -32.2693481
+      Z: -43.9682617
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 17059587946061203338
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -821,11 +2311,12 @@ Objects {
     }
   }
   ParentId: 17059587946061203338
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -869,11 +2360,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -906,6 +2398,7 @@ Objects {
     }
   }
   ParentId: 17059587946061203338
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -920,7 +2413,7 @@ Objects {
 }
 Objects {
   Id: 1229924350432796654
-  Name: "Trigger"
+  Name: "Plant"
   Transform {
     Location {
       X: -2015.85657
@@ -940,6 +2433,8 @@ Objects {
   ChildIds: 11831785712585928614
   ChildIds: 5383015198950186705
   ChildIds: 1118477219207453178
+  ChildIds: 6829542313049136107
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -948,13 +2443,62 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Soil Plot"
+    InteractionLabel: "Interact"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6829542313049136107
+  Name: "Seed"
+  Transform {
+    Location {
+      X: -32.5455132
+      Y: -36.7937508
+      Z: -43.9700317
+    }
+    Rotation {
+      Yaw: -5.00006104
+    }
+    Scale {
+      X: -0.0176464505
+      Y: 0.199801952
+      Z: 0.0755505711
+    }
+  }
+  ParentId: 1229924350432796654
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 589585761720435498
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11706118003824367020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -977,11 +2521,12 @@ Objects {
     }
   }
   ParentId: 1229924350432796654
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -1025,11 +2570,12 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -1062,6 +2608,9 @@ Objects {
     }
   }
   ParentId: 1229924350432796654
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1117,15 +2666,15 @@ Objects {
   Transform {
     Location {
       X: 0.446167
-      Y: 3.08065557
-      Z: -1.14738941e-05
+      Y: 28.0162773
+      Z: 131.653397
     }
     Rotation {
     }
     Scale {
-      X: 0.0689038187
-      Y: 0.067085743
-      Z: 1.003708
+      X: 0.108374014
+      Y: 0.134524733
+      Z: 3.65165043
     }
   }
   ParentId: 17246687283027887675
@@ -1170,16 +2719,16 @@ Objects {
   Name: "Wedge - Curved"
   Transform {
     Location {
-      X: 0.890869141
-      Y: -1.06181026
-      Z: 48.1594658
+      X: -0.0583496094
+      Y: 19.1495285
+      Z: 308.373138
     }
     Rotation {
     }
     Scale {
       X: 0.0343774855
-      Y: 0.133115083
-      Z: 0.247649014
+      Y: 0.264376432
+      Z: 0.577377796
     }
   }
   ParentId: 17246687283027887675
@@ -1551,8 +3100,8 @@ Objects {
   Name: "Rock Block 01"
   Transform {
     Location {
-      X: -3241.97681
-      Y: -1933.97388
+      X: -1500
+      Y: -1250
       Z: 800
     }
     Rotation {
@@ -3155,12 +4704,12 @@ Objects {
   Name: "Wooden Bucket"
   Transform {
     Location {
-      X: -3241.97681
-      Y: -1933.97388
+      X: -1500
+      Y: -1250
       Z: 880.624695
     }
     Rotation {
-      Yaw: -24.9996948
+      Yaw: -24.9998169
     }
     Scale {
       X: 1.75
@@ -4014,7 +5563,7 @@ Objects {
   Name: "Tree Birch 02"
   Transform {
     Location {
-      X: -4902.96826
+      X: -4650
       Y: -600
       Z: 750
     }
@@ -4061,42 +5610,6 @@ Objects {
   ParentId: 4781671109827199097
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4061575510561238973
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 5357975278853717933
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12306520173426875748
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 14859362854836943051
       value {
         Overrides {
@@ -4128,19 +5641,6 @@ Objects {
       }
     }
     ParameterOverrideMap {
-      key: 16781716248805006150
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 17074539370557695780
       value {
         Overrides {
@@ -4156,38 +5656,6 @@ Objects {
           Rotator {
             Yaw: -127.52948
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.627619565
-            Y: 0.627619565
-            Z: 0.627619565
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17467136924413857446
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 58.8570557
-            Y: -37.4352226
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.450194359
-            Y: 0.450194359
-            Z: 0.450194359
-          }
-        }
-        Overrides {
-          Name: "cs:Name"
-          String: "Settler"
         }
       }
     }
@@ -4381,9 +5849,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 2.43150544
-      Y: 2.43150544
-      Z: 2.43150544
+      X: 589.089905
+      Y: 589.089905
+      Z: 589.089905
     }
   }
   ParentId: 4781671109827199097
