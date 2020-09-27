@@ -84,6 +84,7 @@ Objects {
   ChildIds: 8883910499044696411
   ChildIds: 15566865719749200323
   ChildIds: 722545256259756269
+  ChildIds: 10145612790891117916
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -93,6 +94,48 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10145612790891117916
+  Name: "Medival Well"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14836618780174424286
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Medival Well"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3650.0874
+            Y: -2339.14893
+            Z: 803.47937
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.75065839
+            Y: 1.75065839
+            Z: 1.75065839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 500233092975609436
+    }
   }
 }
 Objects {
@@ -1508,8 +1551,8 @@ Objects {
   Name: "Rock Block 01"
   Transform {
     Location {
-      X: -1500
-      Y: -1250
+      X: -3241.97681
+      Y: -1933.97388
       Z: 800
     }
     Rotation {
@@ -3112,12 +3155,12 @@ Objects {
   Name: "Wooden Bucket"
   Transform {
     Location {
-      X: -1500
-      Y: -1250
+      X: -3241.97681
+      Y: -1933.97388
       Z: 880.624695
     }
     Rotation {
-      Yaw: -24.9998169
+      Yaw: -24.9996948
     }
     Scale {
       X: 1.75
@@ -3971,7 +4014,7 @@ Objects {
   Name: "Tree Birch 02"
   Transform {
     Location {
-      X: -4650
+      X: -4902.96826
       Y: -600
       Z: 750
     }
@@ -4018,6 +4061,42 @@ Objects {
   ParentId: 4781671109827199097
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4061575510561238973
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5357975278853717933
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12306520173426875748
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14859362854836943051
       value {
         Overrides {
@@ -4049,6 +4128,19 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 16781716248805006150
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17074539370557695780
       value {
         Overrides {
@@ -4064,6 +4156,38 @@ Objects {
           Rotator {
             Yaw: -127.52948
           }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.627619565
+            Y: 0.627619565
+            Z: 0.627619565
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17467136924413857446
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 58.8570557
+            Y: -37.4352226
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.450194359
+            Y: 0.450194359
+            Z: 0.450194359
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Settler"
         }
       }
     }
@@ -4257,9 +4381,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.43150544
+      Y: 2.43150544
+      Z: 2.43150544
     }
   }
   ParentId: 4781671109827199097
