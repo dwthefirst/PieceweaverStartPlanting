@@ -17,6 +17,7 @@ Objects {
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
+  ChildIds: 6784632707525713417
   ChildIds: 15368806957979736468
   ChildIds: 3506712124799965468
   ChildIds: 6959629469210036848
@@ -4001,6 +4002,73 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 6784632707525713417
+  Name: "NPCs and Dialogs"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14859362854836943051
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPCs and Dialogs"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -281.977417
+            Y: -878.825623
+            Z: 803.47937
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -81.6663208
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.08146882
+            Y: 3.08146882
+            Z: 3.08146882
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17074539370557695780
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 28.5621986
+            Y: -4.18398333
+            Z: 102.36116
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -127.52948
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13288050146468160660
     }
   }
 }
